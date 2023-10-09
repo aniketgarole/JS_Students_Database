@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Student Database</title>
+    
+  </head>
+  <body>
+    <header>
+      <h1>Masai Student Database</h1>
+    </header>
+    <main>
+      <div class="left_div">
+        <div class="add_student">
+          <h2>Add Student</h2>
+          <form id="form">
+            <input type="text" id="name" placeholder="Stundent Name">
+            <input type="text" id="batch" placeholder="Stundent Batch">
+            <input type="text" id="section" placeholder="Stundent Section">
+            <input type="number" id="eval_score" placeholder="Stundent Score">
+            <input type="text" id="image" placeholder="Image Url">
+            <button type="submit" id="add_student">Add Student</button>
+          </form>
+        </div>
+        <div class="update_score">
+          <h2>Update Score</h2>
+          <input type="text" id="new_score" placeholder="Update Score" disabled>
+        </div>
+        <div class="sort_score">
+          <h2>Sort Based On Score</h2>
+          <button id="sort-low-to-high">Sort Low to High</button>
+          <button id="sort-high-to-low">Sort High to Low</button>
+
+        </div>
+        <div class="filter_score">
+          <h2>Filter By Score</h2>
+          <button id="greater-than">Score > = 5</button>
+          <button id="less-than">Score < = 5</button>
+        </div>
+      </div>
+      <div id="container">
+        
+    
+      </div>
+    </main>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>

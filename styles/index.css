@@ -1,0 +1,73 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+main {
+    display: flex;
+    padding: 10px;
+}
+
+.left_div {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    width: 35%;
+}
+
+.add_student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.add_student form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+
+.update_score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sort_score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter_score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
